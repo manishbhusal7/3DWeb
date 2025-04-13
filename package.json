@@ -1,0 +1,16 @@
+{
+  "name": "3d-monitor-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "gsap": "^3.12.7",
+    "three": "^0.160.0"
+  }
+}
