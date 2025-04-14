@@ -175,7 +175,22 @@ let solidMesh, solidEdgeGlow;
 let cylinderMesh, cylinderGlow;
 let curveMesh, curveGlow;
 
-loader.load('newroom.glb', (gltf) => {
+loader.load('// === Load GLTF ===
+const loader = new GLTFLoader();
+let tvScreenMesh, tvEdgeGlow;
+let solidMesh, solidEdgeGlow;
+let cylinderMesh, cylinderGlow;
+let curveMesh, curveGlow;
+
+loader.load('https://github.com/manishbhusal7/3DWeb/releases/download/v1.0.0/newroom.glb', (gltf) => {
+  const model = gltf.scene;
+  scene.add(model);
+
+  model.traverse((child, index) => {
+    if (child.isMesh && (!child.name || /[�]/.test(child.name))) {
+      child.name = `Mesh_${index}`;
+    }
+  });', (gltf) => {
   const model = gltf.scene;
   scene.add(model);
 
