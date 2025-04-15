@@ -26,7 +26,7 @@ export function loadSnoopy(scene, camera) {
   cameraRef = camera;
 
   const loader = new GLTFLoader();
-  loader.load('snoopy.glb', (gltf) => {
+  loader.load('/snoopy.glb', (gltf) => {
     snoopy = gltf.scene;
     snoopy.name = 'snoopy';
     snoopy.scale.set(1.2, 1.2, 1.2);
