@@ -172,7 +172,7 @@ let solidMesh, solidEdgeGlow;
 let cylinderMesh, cylinderGlow;
 let curveMesh, curveGlow;
 
-loader.load('newroom.glb', (gltf) => {
+loader.load('/newroom.glb', (gltf) => {
   const model = gltf.scene;
   scene.add(model);
 
