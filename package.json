@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
     "vite": "^5.0.0"
   },
   "dependencies": {
+    "@vercel/blob": "^1.0.0",
     "emailjs-com": "^3.2.0",
+    "firebase": "^11.6.0",
     "gsap": "^3.12.7",
     "three": "^0.160.0"
   }
