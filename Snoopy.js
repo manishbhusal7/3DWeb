@@ -11,7 +11,7 @@ let tooltip;
 let isJumping = false;
 let followSnoopy = true;
 
-const woof = new Audio('woof.mp3');
+const woof = new Audio('/woof.mp3');
 
 const keys = {
   forward: false,
